@@ -148,6 +148,7 @@ c/ Application pour les Actualités Posts :
             }
             
     Lien pour obtenir une Actualité avec l'id : "5f072b72f7fa4420be7c500d2e9d4754"
+    `localhost:8000/api/post/5f072b72f7fa4420be7c500d2e9d4754`
     Data obtenu : {
                         "id": "5f072b72f7fa4420be7c500d2e9d4754",
                         "created": "2023-12-11T08:09:44.508977Z",
