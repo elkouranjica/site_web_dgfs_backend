@@ -1,0 +1,288 @@
+[
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 2,
+    "fields": {
+      "public_id": "75ab7bea-f7a9-46bf-98c7-4776c0788df6",
+      "created": "2023-12-13T06:14:36.642Z",
+      "updated": "2023-12-13T06:14:36.642Z",
+      "name": "CHU Morafeno",
+      "categorie": "CHU",
+      "adresse": "Tamatave",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 3,
+    "fields": {
+      "public_id": "16845814-3f9d-469f-ad55-af56298a6e5c",
+      "created": "2023-12-13T06:14:57.394Z",
+      "updated": "2023-12-13T06:14:57.394Z",
+      "name": "CHU PZAGA",
+      "categorie": "CHU",
+      "adresse": "Mahajanga",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 4,
+    "fields": {
+      "public_id": "24c969bb-1258-4da6-a209-fa34edae699a",
+      "created": "2023-12-13T06:15:11.822Z",
+      "updated": "2023-12-13T06:15:11.822Z",
+      "name": "CHU Fenoarivo",
+      "categorie": "CHU",
+      "adresse": "Analamanga",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 5,
+    "fields": {
+      "public_id": "c20ed850-750a-4614-ab35-1a3a4274aabe",
+      "created": "2023-12-13T06:15:42.886Z",
+      "updated": "2023-12-13T06:15:42.886Z",
+      "name": "CHU Tambohobe",
+      "categorie": "CHU",
+      "adresse": "Fianarantsoa",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 6,
+    "fields": {
+      "public_id": "802455e1-9e2d-4803-a3da-d0fdf9616fbd",
+      "created": "2023-12-13T06:16:00.974Z",
+      "updated": "2023-12-13T06:16:00.974Z",
+      "name": "CHUMA",
+      "categorie": "CHU",
+      "adresse": "Analamanga",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 7,
+    "fields": {
+      "public_id": "a6d3b012-d454-4d04-8669-26cb0136a3f0",
+      "created": "2023-12-13T06:16:22.354Z",
+      "updated": "2023-12-13T06:16:22.354Z",
+      "name": "CHUMB",
+      "categorie": "CHU",
+      "adresse": "Toliara",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 8,
+    "fields": {
+      "public_id": "7c6cda05-5c2d-4114-83ca-a1ccda0efd0c",
+      "created": "2023-12-13T06:17:18.255Z",
+      "updated": "2023-12-13T06:17:25.346Z",
+      "name": "CHUMEA",
+      "categorie": "CHU",
+      "adresse": "Analamanga",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 9,
+    "fields": {
+      "public_id": "6108464c-5480-4764-8d7c-86fc4475a5f9",
+      "created": "2023-12-13T06:17:50.307Z",
+      "updated": "2023-12-13T06:17:50.307Z",
+      "name": "CHU Tanambao",
+      "categorie": "CHU",
+      "adresse": "Antsiranana",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 10,
+    "fields": {
+      "public_id": "d768a865-82e3-44e9-840d-0dd19adac0c1",
+      "created": "2023-12-13T06:18:04.711Z",
+      "updated": "2023-12-13T06:18:04.711Z",
+      "name": "CHUGOB",
+      "categorie": "CHU",
+      "adresse": "Analamanga",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 11,
+    "fields": {
+      "public_id": "3d3fc575-19ee-4aae-8a80-bcf4203eb37f",
+      "created": "2023-12-13T06:18:24.177Z",
+      "updated": "2023-12-13T06:18:24.177Z",
+      "name": "CHU Anosiala",
+      "categorie": "CHU",
+      "adresse": "Analamanga",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 12,
+    "fields": {
+      "public_id": "01a7661e-8aef-494d-92f4-36a93c3bfa32",
+      "created": "2023-12-13T06:18:50.990Z",
+      "updated": "2023-12-13T06:18:50.990Z",
+      "name": "CHU Andohotapenaka",
+      "categorie": "CHU",
+      "adresse": "Analamanga",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 13,
+    "fields": {
+      "public_id": "5df4e011-cd02-4221-9e4e-bd1096888b7f",
+      "created": "2023-12-13T06:19:13.473Z",
+      "updated": "2023-12-13T06:19:13.473Z",
+      "name": "CHUSSPA",
+      "categorie": "CHU",
+      "adresse": "Analamanga",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 14,
+    "fields": {
+      "public_id": "0f22a9ff-11d9-4825-84d1-127867b92853",
+      "created": "2023-12-13T06:19:27.350Z",
+      "updated": "2023-12-13T06:19:27.350Z",
+      "name": "CHUMET",
+      "categorie": "CHU",
+      "adresse": "Analamanga",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 15,
+    "fields": {
+      "public_id": "0f99ac5c-2f03-4a45-a9cf-bb64c9f76fb6",
+      "created": "2023-12-13T06:19:39.189Z",
+      "updated": "2023-12-13T06:19:39.189Z",
+      "name": "CHUJDR",
+      "categorie": "CHU",
+      "adresse": "Analamanga",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 16,
+    "fields": {
+      "public_id": "5fc18feb-e46f-4c0d-b6c2-b16f2a1fb477",
+      "created": "2023-12-13T06:19:58.962Z",
+      "updated": "2023-12-13T06:19:58.962Z",
+      "name": "CHUAM",
+      "categorie": "CHU",
+      "adresse": "Analamanga",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 17,
+    "fields": {
+      "public_id": "8705026c-15e6-4d87-a127-0b31df7f0a8c",
+      "created": "2023-12-13T06:20:16.398Z",
+      "updated": "2023-12-13T06:20:16.398Z",
+      "name": "CHU Andrainjato",
+      "categorie": "CHU",
+      "adresse": "Fianarantsoa",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 18,
+    "fields": {
+      "public_id": "fca4cea0-4a72-44c3-a731-b984adbad823",
+      "created": "2023-12-13T06:23:51.570Z",
+      "updated": "2023-12-13T06:23:51.570Z",
+      "name": "CHUPKA",
+      "categorie": "CHU",
+      "adresse": "Antsiranana",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 19,
+    "fields": {
+      "public_id": "535f333b-bfe5-4b5b-bcc7-f3cd1a392729",
+      "created": "2023-12-13T06:24:04.166Z",
+      "updated": "2023-12-13T06:24:04.166Z",
+      "name": "CHUJRA",
+      "categorie": "CHU",
+      "adresse": "Analamanga",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 20,
+    "fields": {
+      "public_id": "3bc71ac4-c340-43e1-baea-7240eb92f5f7",
+      "created": "2023-12-13T06:24:52.531Z",
+      "updated": "2023-12-13T06:24:52.531Z",
+      "name": "CHU Analakininina",
+      "categorie": "CHU",
+      "adresse": "Tamatave",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 21,
+    "fields": {
+      "public_id": "906552dc-e443-4650-b31f-76267992fa91",
+      "created": "2023-12-13T06:29:20.370Z",
+      "updated": "2023-12-13T06:29:20.370Z",
+      "name": "CHUSMA",
+      "categorie": "CHU",
+      "adresse": "Analamanga",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 22,
+    "fields": {
+      "public_id": "ca3067d9-3048-4a11-96b8-f1aa164d6f59",
+      "created": "2023-12-13T07:19:21.537Z",
+      "updated": "2023-12-13T07:19:21.537Z",
+      "name": "CHUJRB",
+      "categorie": "CHU",
+      "adresse": "Analamanga",
+      "logo": ""
+    }
+  },
+  {
+    "model": "main_etablissement.etablissement",
+    "pk": 23,
+    "fields": {
+      "public_id": "5f8665bf-1ccb-4056-8b15-e60a4e1e2022",
+      "created": "2023-12-13T08:16:09.033Z",
+      "updated": "2023-12-13T08:16:09.033Z",
+      "name": "CHU Antanambao",
+      "categorie": "CHU",
+      "adresse": "Toliara",
+      "logo": ""
+    }
+  }
+]

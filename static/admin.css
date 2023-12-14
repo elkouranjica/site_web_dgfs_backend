@@ -1,0 +1,16 @@
+/* Exemple de styles CSS */
+
+/* Modifier la couleur de fond de l'en-tête de la liste d'affichage */
+.grp-module {
+    background-color: #e24242;
+}
+
+/* Modifier la couleur du texte de l'en-tête de la liste d'affichage */
+.grp-module h2 {
+    color: #333;
+}
+
+/* Ajouter une bordure aux éléments de la liste d'affichage */
+.grp-row {
+    border-bottom: 1px solid #ddd;
+}
