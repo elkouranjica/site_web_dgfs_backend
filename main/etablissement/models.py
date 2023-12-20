@@ -14,8 +14,11 @@ CATEGORIE_PERSONNEL = [
 
 
 def logo_directory_path(instance, filename):
-    # file will be uploaded to MEDIA_ROOT/user_<id>/<filename>
     return "logo_{0}/{1}".format(instance.public_id, filename)
+
+
+def description_directory_path(instance, filename):
+    return "description_{0}/{1}".format(instance.public_id, filename)
 
 
 class Etablissement(AbstractModel):
@@ -28,6 +31,7 @@ class Etablissement(AbstractModel):
                                           ('CSB2', 'Centre de Santé de Base 2')], max_length=4)
     adresse = models.CharField(max_length=200)
     logo = models.ImageField(upload_to=logo_directory_path, null=True, blank=True)
+    image_description = models.ImageField(upload_to=description_directory_path, null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -69,7 +73,7 @@ class Contact(AbstractModel):
 
     def __str__(self):
         return self.etablissement.name
-    
+
     @admin.display(description="Accueil")
     def acceuil(self):
         return " ".join([self.contact_accueil[:3], self.contact_accueil[3:5], self.contact_accueil[5:8],
