@@ -64,6 +64,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'MainRoot.urls'
 
+CORS_ALLOWED_ORIGINS = []
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -87,12 +89,15 @@ WSGI_APPLICATION = 'MainRoot.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'db',  # set in docker-compose.yml
-        'PORT': 5432,  # default postgres port
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'db',
+        'USER': 'root',
+        'PASSWORD': 'root@mysql',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
     }
 }
 
@@ -142,7 +147,6 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
     'PAGE_SIZE': 5
 }
-
 # Media files
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "uploads"

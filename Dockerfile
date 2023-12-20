@@ -13,5 +13,8 @@ WORKDIR /code
 COPY ./requirements.txt .
 RUN pip install -r requirements.txt
 
+CMD python manage.py migrate
+CMD python manage.py makemigrations
+
 # Copy project
 COPY . .

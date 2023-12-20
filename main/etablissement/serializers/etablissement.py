@@ -37,7 +37,7 @@ class EtablissementSerializer(AbstractSerializer):
 
     class Meta:
         model = Etablissement
-        fields = ["id", "name", "categorie", "adresse", "logo", "descriptions", "services", "directeur", "contacts"]
+        fields = ["id", "name", "categorie", "adresse", "logo", "descriptions", "services", "directeur", "contacts" , "image"]
 
     @staticmethod
     def get_directeur(obj):
