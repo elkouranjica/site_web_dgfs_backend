@@ -30,6 +30,9 @@ DEBUG = env.bool("DEBUG", default=False)
 
 ALLOWED_HOSTS = ["dgfs.mg", "localhost", "127.0.0.1"]
 
+# NOMBRE D'ELEMENTS PAR PAGE
+PAGE_SIZE = 10
+
 SITE_ID = 1
 
 # Application definition
@@ -55,6 +58,7 @@ INSTALLED_APPS = [
     'main.user',
     'main.etablissement',
     'main.post',
+    'main.message',
 ]
 
 MIDDLEWARE = [
@@ -93,19 +97,18 @@ WSGI_APPLICATION = 'MainRoot.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'NAME': 'postgres',
-    #     'USER': 'postgres',
-    #     'PASSWORD': 'postgres',
-    #     'HOST': 'db',  # set in docker-compose.yml
-    #     'PORT': 5432,  # default postgres port
-    # }
-
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3'
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'db',  # set in docker-compose.yml
+        'PORT': 5432,  # default postgres port
     }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3'
+    # }
 }
 
 # Password validation
@@ -154,7 +157,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-    'PAGE_SIZE': 5
+    'PAGE_SIZE': PAGE_SIZE
 }
 
 # Media files

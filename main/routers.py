@@ -2,6 +2,7 @@ from rest_framework import routers
 
 from main.auth.viewsets.logout import LogoutViewSet
 from main.etablissement.viewsets.etablissement import EtablissementViewSet
+from main.message.viewsets import MessageViewSet
 from main.post.viewsets import PostViewSet
 from main.user.viewsets import UserViewSet
 from main.auth.viewsets import RegisterViewSet, LoginViewSet, RefreshViewSet
@@ -34,5 +35,11 @@ router.register(r"etablissement", EtablissementViewSet, basename="etablissement"
 # ################### ACTUALITÉS                 ###################### #
 # ##################################################################### #
 router.register(r"post", PostViewSet, basename="post")
+
+
+# ##################################################################### #
+# ################### MESSAGES                   ###################### #
+# ##################################################################### #
+router.register(r"message", MessageViewSet, basename="message")
 
 urlpatterns = [*router.urls]
