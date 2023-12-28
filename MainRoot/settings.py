@@ -95,11 +95,11 @@ WSGI_APPLICATION = 'MainRoot.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'dgfsmg_db',
-        'USER': 'dgfsmg_db',
-        'PASSWORD': 'ryqEVfu3m6eFNKeszpqq',
+        'NAME': 'db',
+        'USER': 'root',
+        'PASSWORD': 'root@mysql',
         'HOST': '127.0.0.1',
-        # 'PORT': '3306',
+        'PORT': '3306',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
         }

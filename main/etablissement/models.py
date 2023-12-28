@@ -38,8 +38,6 @@ class Etablissement(AbstractModel):
     logo = models.ImageField(upload_to=logo_directory_path, null=True, blank=True)
     image_description = models.ImageField(upload_to=description_directory_path, null=True, blank=True)
 
-    image = models.ImageField(upload_to=accueil_directory_path, null=True, blank=True)
-
     def __str__(self):
         return self.name
 
