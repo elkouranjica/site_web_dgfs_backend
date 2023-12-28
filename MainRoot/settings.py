@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'main.etablissement',
     'main.post',
     'main.message',
+    'main.institution'
 ]
 
 MIDDLEWARE = [

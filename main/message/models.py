@@ -9,3 +9,11 @@ class Message(AbstractModel):
 
     def __str__(self):
         return self.mail_address
+
+
+class ReponseMessage(AbstractModel):
+    message = models.ForeignKey(Message, on_delete=models.CASCADE)
+    repondeur = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.message
