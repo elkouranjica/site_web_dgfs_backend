@@ -1,0 +1,27 @@
+  File "/home/dgfsmg/repositories/dgfs-back/passenger_wsgi.py", line 1
+    from dgfs-back.wsgi import application
+             ^
+SyntaxError: invalid syntax
+  File "/home/dgfsmg/repositories/dgfs-back/passenger_wsgi.py", line 1
+    from dgfs-back.wsgi import application
+             ^
+SyntaxError: invalid syntax
+[UID:3250][742825] Child process with pid: 742902 was killed by signal: 15, core dumped: no
+  File "/home/dgfsmg/repositories/dgfs-back/passenger_wsgi.py", line 1
+    from "dgfs-back.wsgi" import application
+         ^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax
+  File "/home/dgfsmg/repositories/dgfs-back/passenger_wsgi.py", line 1
+    from "dgfs-back.wsgi" import application
+         ^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax
+[UID:3250][777004] Child process with pid: 777221 was killed by signal: 15, core dumped: no
+Traceback (most recent call last):
+  File "/home/dgfsmg/repositories/dgfs-back/passenger_wsgi.py", line 1, in <module>
+    from dgfs_back.wsgi import application
+ModuleNotFoundError: No module named 'dgfs_back'
+Traceback (most recent call last):
+  File "/home/dgfsmg/repositories/dgfs-back/passenger_wsgi.py", line 1, in <module>
+    from dgfs_back.wsgi import application
+ModuleNotFoundError: No module named 'dgfs_back'
+[UID:3250][784395] Child process with pid: 784637 was killed by signal: 15, core dumped: no

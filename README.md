@@ -4,7 +4,7 @@
 
 3- Manao migration pour base de données `python manage.py makemigrations main_user main_etablissement main_post`
 
-4- Aveo manao migrate pour création des tables dans postgres `python manage.py migrate`
+4- Aveo manao migrate pour création des tables dans postgres python manage.py migrate
 
 5- Dia mi-créer superuser aveo `python manage.py createsuperuser`
 
