@@ -2,9 +2,9 @@
 
 2- Miditra ao amin bashn'lay docker aveo `docker compose exec web bash`
 
-3- Manao migration pour base de données python manage.py makemigrations main_user main_etablissement main_post
+3- Manao migration pour base de données `python manage.py makemigrations main_user main_etablissement main_post main_institution main_message`
 
-4- Aveo manao migrate pour création des tables dans postgres python manage.py migrate
+4- Aveo manao migrate pour création des tables dans postgres `python manage.py migrate`
 
 5- Dia mi-créer superuser aveo `python manage.py createsuperuser`
 
