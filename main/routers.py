@@ -3,10 +3,12 @@ from rest_framework import routers
 from main.auth.viewsets.logout import LogoutViewSet
 from main.etablissement.viewsets.etablissement import EtablissementViewSet
 from main.message.viewsets import MessageViewSet
+from main.partenaire.viewsets import PartenaireViewSet
 from main.post.viewsets import PostViewSet
 from main.user.viewsets import UserViewSet
 from main.auth.viewsets import RegisterViewSet, LoginViewSet, RefreshViewSet
-from main.institution.viewsets import MinistereViewSet, DirectionViewSet, ServiceViewSet, DirecteurViewSet, ChefServiceViewSet
+from main.institution.viewsets import MinistereViewSet, DirectionViewSet, ServiceViewSet,\
+    DirecteurViewSet, ChefServiceViewSet
 
 
 router = routers.SimpleRouter()
@@ -45,13 +47,19 @@ router.register(r"message", MessageViewSet, basename="message")
 
 
 # ##################################################################### #
-# ################### MESSAGES                   ###################### #
+# ################### INSTITUTIONS               ###################### #
 # ##################################################################### #
 router.register(r"ministere", MinistereViewSet, basename="ministere")
 router.register(r"direction", DirectionViewSet, basename="direction")
 router.register(r"service", ServiceViewSet, basename="service")
 router.register(r"directeur", DirecteurViewSet, basename="directeur")
 router.register(r"chef-service", ChefServiceViewSet, basename="chef-service")
+
+
+# ##################################################################### #
+# ################### PARTENAIRES                   ###################### #
+# ##################################################################### #
+router.register(r"partenaires", PartenaireViewSet, basename="partenaire")
 
 
 urlpatterns = [*router.urls]
