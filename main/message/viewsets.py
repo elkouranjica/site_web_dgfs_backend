@@ -8,7 +8,7 @@ class MessageViewSet(AbstractViewSet):
     queryset = Message.objects.all()
     serializer_class = MessageSerializer
     permission_classes = (AllowAny,)
-    http_method_names = "get"
+    http_method_names = ("get" , "post")
 
     def get_object(self):
         obj = Message.objects.get_object_by_public_id(self.kwargs["pk"])

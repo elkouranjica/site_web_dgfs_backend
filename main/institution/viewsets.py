@@ -18,7 +18,7 @@ class MinistereViewSet(AbstractViewSet):
 
 
 class DirectionViewSet(AbstractViewSet):
-	queryset = Direction.objects.all()
+	queryset = Direction.objects.filter(type_direction="DC")
 	serializer_class = DirectionSerializer
 	permission_classes = (AllowAny,)
 	http_method_names = "get"
