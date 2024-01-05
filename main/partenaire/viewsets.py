@@ -1,11 +1,14 @@
 from .models import Partenaire
 from .serializers import PartenaireSerializer
 from ..abstract.viewsets import AbstractViewSet
+from rest_framework.permissions import AllowAny
+
 
 
 class PartenaireViewSet(AbstractViewSet):
     queryset = Partenaire.objects.all()
     serializer_class = PartenaireSerializer
+    permission_classes = (AllowAny,)
     http_method_names = 'get'
 
     def get_object(self):
