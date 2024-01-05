@@ -64,7 +64,8 @@ INSTALLED_APPS = [
     'main.etablissement',
     'main.post',
     'main.message',
-    'main.institution'
+    'main.institution',
+    'main.partenaire',
 ]
 
 MIDDLEWARE = [
