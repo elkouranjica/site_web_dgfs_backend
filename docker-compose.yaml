@@ -9,6 +9,7 @@ services:
       - .:/code
     depends_on:
       - db
+
   db:
     image: postgres
     container_name: "db_site"
@@ -20,5 +21,6 @@ services:
       - "POSTGRES_PASSWORD=postgres"
     ports:
       - "5432:5432"
+
 volumes:
   postgres_data:
