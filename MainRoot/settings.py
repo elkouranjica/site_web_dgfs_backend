@@ -10,8 +10,13 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+import pymysql
+
 from pathlib import Path
 from environs import Env
+
+pymysql.install_as_MySQLdb()
+
 
 env = Env()
 env.read_env()
@@ -28,7 +33,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = ["dgfs.mg", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["dgfs.mg" , "content.dgfs.mg", "localhost", "127.0.0.1"]
 
 # NOMBRE D'ELEMENTS PAR PAGE
 PAGE_SIZE = 10
@@ -100,11 +105,10 @@ WSGI_APPLICATION = 'MainRoot.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'db',
-        'USER': 'root',
-        'PASSWORD': 'root@mysql',
+        'NAME': 'dgfsmg_db',
+        'USER': 'dgfsmg_db',
+        'PASSWORD': 'ryqEVfu3m6eFNKeszpqq',
         'HOST': '127.0.0.1',
-        'PORT': '3306',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
         }
