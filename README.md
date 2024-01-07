@@ -17,3 +17,11 @@
 01 - Dump data from the Localhost into /fixtures/dump.json
 
 02 - Push the dumped data to git
+ 
+03 - commit/pull change
+
+04 - Connect to the Ssh on the server
+
+05 - pull data from git
+
+06 - python manage.py 
