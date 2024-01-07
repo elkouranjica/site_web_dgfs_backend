@@ -101,9 +101,9 @@ WSGI_APPLICATION = 'MainRoot.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'db',
-        'USER': 'root',
-        'PASSWORD': 'root@mysql',
+        'NAME': env.str("DB_NAME"),
+        'USER': env.str("DB_USER"),
+        'PASSWORD': env.str("DB_PASSWORD"),
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'OPTIONS': {
@@ -177,4 +177,6 @@ DEFAULT_AVATAR_URL = "https://avatars.dicebear.com/api/identicon/.svg"
 CORS_ORIGIN_WHITELIST = (
     "http://localhost:3000",
     "http://localhost:8000",
+    "https://dev.dgfs.mg/",
+    "https://content.dgfs.mg"
 )
