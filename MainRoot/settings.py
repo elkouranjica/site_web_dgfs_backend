@@ -181,6 +181,6 @@ DEFAULT_AVATAR_URL = "https://avatars.dicebear.com/api/identicon/.svg"
 CORS_ORIGIN_WHITELIST = (
     "http://localhost:3000",
     "http://localhost:8000",
-    "https://dev.dgfs.mg/",
+    "https://dev.dgfs.mg",
     "https://content.dgfs.mg"
 )
