@@ -10,8 +10,13 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+import pymysql
+
 from pathlib import Path
 from environs import Env
+
+pymysql.install_as_MySQLdb()
+
 
 env = Env()
 env.read_env()
@@ -28,7 +33,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = ["dgfs.mg", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["dgfs.mg" , "content.dgfs.mg", "localhost", "127.0.0.1"]
 
 # NOMBRE D'ELEMENTS PAR PAGE
 PAGE_SIZE = 10
@@ -105,7 +110,6 @@ DATABASES = {
         'USER': env.str("DB_USER"),
         'PASSWORD': env.str("DB_PASSWORD"),
         'HOST': '127.0.0.1',
-        'PORT': '3306',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
         }
@@ -177,6 +181,6 @@ DEFAULT_AVATAR_URL = "https://avatars.dicebear.com/api/identicon/.svg"
 CORS_ORIGIN_WHITELIST = (
     "http://localhost:3000",
     "http://localhost:8000",
-    "https://dev.dgfs.mg",
+    "https://dev.dgfs.mg/",
     "https://content.dgfs.mg"
 )
